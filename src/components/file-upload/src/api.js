@@ -10,7 +10,15 @@ const prefix = '/api'
 
 export function upload(formData) {
     return request({
-        url: `${prefix}/file/upload`,
+        url: `${prefix}/file/v1/upload`,
+        method: 'post',
         data: formData
+    })
+}
+
+
+export function demo() {
+    return request({
+        url: `${prefix}/file/v1/demo`
     })
 }

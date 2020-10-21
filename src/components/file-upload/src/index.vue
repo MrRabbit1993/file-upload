@@ -1,5 +1,5 @@
 <script>
-import { upload } from "./api"
+import { upload,demo } from "./api"
 export default {
     name:"file-upload",
     props:{
